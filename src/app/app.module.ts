@@ -19,7 +19,7 @@ import { ImprintComponent } from './pages/imprint/imprint.component';
     ImprintComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule
   ],
   providers: [],
