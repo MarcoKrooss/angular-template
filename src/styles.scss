@@ -2,3 +2,14 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@layer base {
+    @font-face {
+        font-family: "Inter";
+        src: url(assets/fonts/inter/Inter-Regular.ttf);
+    }
+}
+
+* {
+    font-family: "Inter";
+}
