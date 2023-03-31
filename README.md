@@ -5,8 +5,8 @@ You can use this angular-template like described in the MIT-License of this proj
 
 ## Roadmap
 
-- Created basic template with components and basic folder structure
-
+- basic template creation (folder structure, components, guard)
+- added ssr via angular universal
 
 ## License
 

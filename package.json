@@ -1,6 +1,6 @@
 {
   "name": "angular-template",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -13,6 +13,7 @@
     "prerender": "ng run angular-template:prerender"
   },
   "private": true,
+  "license": "MIT",
   "dependencies": {
     "@angular/animations": "^15.2.5",
     "@angular/common": "^15.2.5",
