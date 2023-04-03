@@ -1,0 +1,42 @@
+// url("assets/fonts/roboto/Roboto-Black.ttf");
+// url("assets/fonts/roboto/Roboto-BlackItalic.ttf");
+// url("assets/fonts/roboto/Roboto-Bold.ttf");
+// url("assets/fonts/roboto/Roboto-BoldItalic.ttf");
+// url("assets/fonts/roboto/Roboto-Italic.ttf");
+// url("assets/fonts/roboto/Roboto-Light.ttf");
+// url("assets/fonts/roboto/Roboto-LightItalic.ttf");
+//* url("assets/fonts/roboto/Roboto-Medium.ttf");
+// url("assets/fonts/roboto/Roboto-MediumItalic.ttf");
+// url("assets/fonts/roboto/Roboto-Regular.ttf");
+// url("assets/fonts/roboto/Roboto-Thin.ttf");
+// url("assets/fonts/roboto/Roboto-ThinItalic.ttf");
+// url("assets/fonts/inter/Inter-Black.ttf");
+// url("assets/fonts/inter/Inter-Bold.ttf");
+// url("assets/fonts/inter/Inter-ExtraBold.ttf");
+// url("assets/fonts/inter/Inter-ExtraLight.ttf");
+// url("assets/fonts/inter/Inter-Light.ttf");
+// url("assets/fonts/inter/Inter-Medium.ttf");
+//* url("assets/fonts/inter/Inter-Regular.ttf");
+// url("assets/fonts/inter/Inter-SemiBold.ttf");
+// url("assets/fonts/inter/Inter-Thin.ttf");
+
+//TODO: create @font-face for every .ttf-file above
+//* fonts marked with a star ('*') are already importet as font-face
+
+@font-face {
+    font-family: "Inter";
+    src: url("../assets/fonts/inter/Inter-Regular.ttf");
+    format: ("truetype");
+}
+@font-face {
+    font-family: "Inter-Bold";
+    src: url("../assets/fonts/inter/Inter-Bold.ttf");
+    format: ("truetype");
+}
+
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../assets/fonts/roboto/Roboto-Medium.ttf");
+    format: ("truetype");
+}

@@ -8,6 +8,8 @@ import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { TodoComponent } from './pages/todo/todo.component';
 import { PrivacyPolicyComponent } from './pages/privacypolicy/privacypolicy.component';
 import { ImprintComponent } from './pages/imprint/imprint.component';
+import { FormsModule } from '@angular/forms';
+import { CheckboxComponent } from './components/checkbox/checkbox.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { ImprintComponent } from './pages/imprint/imprint.component';
     NotfoundComponent,
     TodoComponent,
     PrivacyPolicyComponent,
-    ImprintComponent
+    ImprintComponent,
+    CheckboxComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

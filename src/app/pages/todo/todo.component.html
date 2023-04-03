@@ -1,7 +1,43 @@
-<div class="p-8 bg-[#031956] h-screen flex justify-center items-center">
-    <div class="bg-[#344FA1] p-5 h-full w-3/4 text-white font-bold rounded-lg">
-        <h1 class="text-4xl text-center">ToDo - List</h1>
-        <hr class="my-3">
-    </div>
+<div class="p-8 bg-[#121212] min-h-screen flex justify-center items-center">
+  <div class="bg-indigo-900 py-12 px-8 h-full w-3/4 text-white font-bold rounded-lg">
+    <h1 class="text-4xl text-center mb-8">Manage your ToDo's</h1>
+    <hr class="mb-8"/>
 
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+        <span class="text-xl">Type in your ToDo:</span>
+        <input 
+            type="text"
+            class="my-2 block w-3/4 rounded-md border-gray-300 text-gray-700 
+            shadow-sm focus:border-indigo-200 focus:ring focus:ring-blue-300 focus:ring-opacity-50"
+            placeholder="e.g. feeding my cat"
+            maxlength="25"
+            name="todoInput"
+            required
+            ngModel
+            #todoInput="ngModel"
+            autocomplete="off"
+        />
+        <button
+            class="bg-indigo-400 hover:bg-indigo-500 p-2 px-5 rounded-lg transition-all duration-250">
+            Submit
+        </button>
+    </form>
+
+    <table class="mt-12 w-full" *ngIf="todoList.length > 0">
+        <thead>
+            <th class="p-3 bg-indigo-400 rounded-t-lg text-left text-xl">
+                Current ToDo's:
+            </th>
+        </thead>
+
+        <tbody>
+        <tr *ngFor="let todo of todoList; let i = index" class="even:bg-indigo-500 odd:bg-indigo-600">
+            <td class="p-3">
+            <app-checkbox (taskState)="getTaskState($event, i)"></app-checkbox>
+            <span [ngClass]="taskState[i]">{{ todo }}</span>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+  </div>
 </div>
