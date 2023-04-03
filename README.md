@@ -7,6 +7,7 @@ You can use this angular-template like described in the MIT-License of this proj
 
 - basic template creation (folder structure, components, guard)
 - added ssr via angular universal
+- created simple todolist for testing-purposes
 
 ## License
 
